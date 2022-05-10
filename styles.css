@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0px;
+}
+
+body {
+    overflow-x: hidden
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0px;
+    margin: 0px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    height: 250px;
+    width: 100vw;
+    background-color: #983179;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.header .links-content {
+    position: absolute;
+    top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    font-size: 1.2rem;
+    width: 50vw;
+}
+
+.header .links-content a {
+    text-decoration: none;
+}
+
+.header .links-content h1 {
+    color: #fff;
+    font-weight: 400;
+}
+
+.header .links-content h1:hover {
+    transform: scale(0.9);
+    transition: ease 0.5s; 
+}
+
+.header img {
+    position: absolute;
+    top: 18%;
+}
+
+
+.introduction {
+    height: 80vh;
+    width: 100vw;
+    color: #fff;
+    background-color: #4c1a3f;
+    display: flex;
+    justify-content: center;
+}
+
+.introduction .introduction-text {
+    margin-top: 170px;
+    
+    max-width: 1000px;
+    font-size: 1.5rem;
+}
+
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left:0;
+    gap: 50px;
+    background-color: #3b423c;
+    width: 100px;
+    height: 100vh;
+}
+
+.side-menu img {
+    transition: 0.5s ease;
+}
+
+.side-menu img:hover {
+    transform: scale(0.90);
+}
+
+.side-menu .img {
+    width: 80px;
+    margin-top: 100px;
+}
+
+.side-menu .img2 {
+    width: 100px;
+}
+
+
+.games-container {
+    height: 80vh;
+    width: 100vw;
+    padding-top: 150px;
+    gap: 50px;
+    color: white;
+    display: flex;
+    background-color: #4c1a3f;
+    flex-direction: column;
+    align-items: center;
+}
+
+.games-container .game {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 700px;
+}
+
+.games-container .game h2 {
+    text-align: center;
+}
+
+.games-container .game .description {
+    padding-top: 40px;
+}
+
+
+.games-container img {
+    border: 1px solid white;
+    width: 200px;
+    height: 200px;
+}
+
+.games-container .game2 {
+    display: flex;
+    flex-direction: row-reverse;
+    
+    gap: 40px;
+    width: 700px;
+}
+
+.games-container .game2 h2 {
+    text-align: center;
+}
+
+.games-container .game2 .description {
+    padding-top: 40px;
+}
+
+
+.games-container img {
+    border: 1px solid white;
+    width: 200px;
+    height: 200px;
+}
+
+.games-container .game:hover, .games-container .game2:hover{
+    transform: scale(0.98);
+    transition: ease 0.5s;
+}
